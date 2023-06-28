@@ -147,7 +147,7 @@ resource "aws_nat_gateway" "this" {
 }
 ```
 		
-## 변수
+## 3. 변수
 ### 3.1 name, description, default 값은 인수 참조내 정의된 값을 사용
 ### 3.2 변수의 유효성 검사는 제한적이므로 적절하게 사용
 ### 3.3 list(...)나 map(...) 타입 이름은 복수형 사용
@@ -232,7 +232,7 @@ locals {
 })
 ```
 	
-## 아웃풋
+## 4. 아웃풋
 ### 4.1 아웃풋의 이름은 항상 포함하고 있는 속성을 명확하게 설명
 - Good
 ```
@@ -349,7 +349,7 @@ output "generated_user_password" {
 }
 ```
 				
-## 모듈
+## 5. 모듈
 ### 5.1 "terraform-{provider}-{name}" 형태의 모듈명 사용
 ### 5.2 모듈 버전은 Semantic Versioning 준수
 ```
